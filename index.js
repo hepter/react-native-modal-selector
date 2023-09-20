@@ -57,6 +57,7 @@ const propTypes = {
     searchTextStyle: PropTypes.oneOfType([PropTypes.object, PropTypes.number]),
     cancelText: PropTypes.string,
     searchText: PropTypes.string,
+    searchAutoFocus: PropTypes.bool,
     disabled: PropTypes.bool,
     supportedOrientations: PropTypes.arrayOf(
         PropTypes.oneOf([
@@ -130,6 +131,7 @@ const defaultProps = {
     initValueTextStyle: {},
     cancelText: 'cancel',
     searchText: 'search',
+    searchAutoFocus: false,
     disabled: false,
     supportedOrientations: ['portrait', 'landscape'],
     keyboardShouldPersistTaps: 'always',
@@ -355,6 +357,7 @@ export default class ModalSelector extends React.Component {
             cancelTextStyle,
             cancelText,
             searchText,
+            searchAutoFocus,
             search,
             searchStyle,
             searchTextStyle,
@@ -404,7 +407,7 @@ export default class ModalSelector extends React.Component {
                     >
                         {search &&
                             <View style={[styles.searchStyle, searchStyle]}>
-                                <TextInput style={searchTextStyle} placeholder={searchText} onChangeText={this.onChangeSearch} />
+                                <TextInput autoFocus={searchAutoFocus} style={searchTextStyle} placeholder={searchText} onChangeText={this.onChangeSearch} />
                             </View>
                         }
 
