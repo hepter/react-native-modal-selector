@@ -298,6 +298,20 @@ interface IModalSelectorProps<TOption> {
   searchTextStyle?: TextStyle;
 
   /**
+   * Color of placeHolder search text
+   * 
+   * Default is `''`
+   */
+  placeHolderTextColor?: string;
+
+  /**
+   * Keyboard type in the search field
+   * 
+   * Default is `'default'`
+   */
+  keyboardType?: string;
+
+  /**
    * Disables opening of the modal
    * 
    * Default is `false`
