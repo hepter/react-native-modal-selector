@@ -1,6 +1,6 @@
 {
   "name": "react-native-modal-selector-searchable",
-  "version": "2.1.5",
+  "version": "2.1.6",
   "description": "A cross-platform (iOS / Android), selector/picker component for React Native that is filterable, highly customizable and supports sections.",
   "main": "index.js",
   "typings": "index.d.ts",
