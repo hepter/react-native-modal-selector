@@ -7,9 +7,11 @@ A cross-platform (iOS / Android), selector/picker component for React Native tha
 This project was forked from [react-native-modal-selector](https://github.com/peacechen/react-native-modal-selector)
 
 ## Change log 
+### v2.1.6
+-  Added `placeholderTextColor` and `keyboardType` props on search field ([faslash](https://github.com/faslash))
 
 ### v2.1.5
--  Added searchAutoFocus prop for autofocus on search field ([jonacds](https://github.com/jonacds))
+-  Added `searchAutoFocus` prop for `autofocus` on search field ([jonacds](https://github.com/jonacds))
 ## Demo
 
 <img src="docs/demo.gif" />
